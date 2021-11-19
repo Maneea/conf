@@ -1,0 +1,5 @@
+" Download and install plugins
+source ~/.vim/vundle/init.vim
+
+" Apply general settings (line numbers, syntax, tabs, etc.)
+source ~/.vim/general.vim
