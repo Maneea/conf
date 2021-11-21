@@ -32,12 +32,12 @@ fi
 BASE=$(printf "$(pwd)/$0"|sed -e's/\/.\//\//g'|grep -Eo '^/.+/'|grep -Eo '^.+[^/]')
 echo Creating symbolic links to ~/.vim and ~/.vimrc
 ln -s "$BASE/dot-vimrc" ~/.vimrc 
-ln -s "$BASE/vim" ~/.vim
+ln -s "$BASE/dot-vim" ~/.vim
 
-if [ ! -d "$BASE/vim/bundle/Vundle.vim" ]
+if [ ! -d "$BASE/dot-vim/bundle/Vundle.vim" ]
 then
     echo Downloading Vundle! ...
-    git clone https://github.com/VundleVim/Vundle.vim.git "$BASE/vim/bundle/Vundle.vim"
+    git clone https://github.com/VundleVim/Vundle.vim.git "$BASE/dot-vim/bundle/Vundle.vim"
 fi
 
 # Install all plugins!
