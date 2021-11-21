@@ -2,4 +2,7 @@
 source ~/.vim/vundle/init.vim
 
 " Apply general settings (line numbers, syntax, tabs, etc.)
-source ~/.vim/general.vim
+source ~/.vim/custom-conf/general.vim
+
+" Languages' configuration
+source ~/.vim/custom-conf/go.vim	" Golang
