@@ -41,13 +41,15 @@ fi
 #                           ALIASES                         #
 #############################################################
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
 alias c='clear'
 alias g='git'
 alias d='docker'
 alias e='echo'
 alias p='printf'
+
+alias open='xdg-open'
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 
 #############################################################
 #                           ENV VARS                        #

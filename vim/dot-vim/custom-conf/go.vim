@@ -34,6 +34,5 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 
 " Re-bind auto-completion
 autocmd FileType go inoremap <NUL> <C-x><C-o>
-autocmd FileType go inoremap <buffer> . .<C-x><C-o>
 
 
