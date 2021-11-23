@@ -17,12 +17,15 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 " Status Bar (Airline Plugin)
 let g:airline#extensions#tabline#enabled = 1 " Show file name at the top
+let g:airline_powerline_fonts = 1            " Show icons
 
 
 """""""""""""""""""""""""""""""""""""""""""""
 """""""""""" Custom Keybinding """"""""""""""
 """""""""""""""""""""""""""""""""""""""""""""
 
-" Switch between buffers (like a web browser)
+" Switch between and close buffers (like a web browser)
 noremap <C-PageUp> <Esc>:bprevious<CR>
-noremap <C-PageDown> <Esc>:bnext<CR>    
+noremap <C-PageDown> <Esc>:bnext<CR>
+noremap <C-w> <Esc>:bdelete<CR>
+

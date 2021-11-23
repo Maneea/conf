@@ -35,4 +35,5 @@ autocmd FileType go nmap <leader>t  <Plug>(go-test)
 " Re-bind auto-completion
 autocmd FileType go inoremap <NUL> <C-x><C-o>
 
-
+" Auto-import shortcut
+autocmd FileType go noremap <C-i> <Esc>:GoImports<CR>
