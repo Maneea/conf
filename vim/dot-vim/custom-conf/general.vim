@@ -9,6 +9,9 @@ set expandtab
 " Highlight search
 set hlsearch
 
+" Colorscheme (https://github.com/tomasr/molokai) in ~/.vim/colors
+colorscheme molokai
+
 " Unicode (to show icons)
 set encoding=UTF-8
 
@@ -18,7 +21,6 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 " Status Bar (Airline Plugin)
 let g:airline#extensions#tabline#enabled = 1 " Show file name at the top
 let g:airline_powerline_fonts = 1            " Show icons
-
 
 """""""""""""""""""""""""""""""""""""""""""""
 """""""""""" Custom Keybinding """"""""""""""
