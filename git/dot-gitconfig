@@ -1,0 +1,12 @@
+[user]
+	name = Abdulrahman Bin Maneea
+	email = a@maneea.net
+[core]
+	sshCommand = ssh -i ~/.ssh/id_rsa
+[alias]
+    d = diff
+    s = status
+    l = log
+    b = branch
+    p = push
+    a = add .
