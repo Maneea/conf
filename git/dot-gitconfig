@@ -6,7 +6,7 @@
 [alias]
     d = diff
     s = status
-    l = log
+    l = log --pretty=oneline
     b = branch
     p = push
     a = add .
