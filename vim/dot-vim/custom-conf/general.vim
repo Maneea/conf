@@ -31,3 +31,14 @@ noremap <C-PageUp> <Esc>:bprevious<CR>
 noremap <C-PageDown> <Esc>:bnext<CR>
 noremap <C-w> <Esc>:bdelete<CR>
 
+" Use ctrl-[hjkl] to select the active split!
+nmap <silent> <C-k> :wincmd k<CR>
+nmap <silent> <C-j> :wincmd j<CR>
+nmap <silent> <C-h> :wincmd h<CR>
+nmap <silent> <C-l> :wincmd l<CR>
+
+" Again, mapping for split panes navigation
+nnoremap <silent> <S-Left> :wincmd h<CR>
+nnoremap <silent> <S-Right> :wincmd l<CR>
+nnoremap <silent> <S-Up> :wincmd k<CR>
+nnoremap <silent> <S-Down> :wincmd j<CR>
