@@ -10,3 +10,4 @@
     b = branch
     p = push
     a = add .
+    c = commit -m

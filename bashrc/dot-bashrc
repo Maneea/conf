@@ -41,11 +41,12 @@ fi
 #                           ALIASES                         #
 #############################################################
 
-alias c='clear'
+alias c='curl'
 alias g='git'
 alias d='docker'
 alias e='echo'
 alias p='printf'
+alias v='vim'
 
 alias open='xdg-open'
 alias ls='ls --color=auto'
