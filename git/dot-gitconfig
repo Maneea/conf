@@ -6,7 +6,7 @@
 [alias]
     d = diff
     s = status
-    l = log --pretty=oneline
+    l = log --pretty=oneline --graph
     b = branch
     p = push
     a = add .
