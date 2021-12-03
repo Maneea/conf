@@ -1,26 +1,41 @@
 #!/bin/bash
 
 # If ~/.vimrc exists, remove it or fail
-if [ -f ~/.vimrc ]; then
-    if [[ $(file --mime-type -b ~/.vimrc) == *"symlink"* ]]; then
-        echo REMOVING OLD SYMLINK ~/.vimrc
-        rm ~/.vimrc
-    else
-        echo ~/.vimrc EXISTS!
-        exit 1
-    fi
+if [ -L ~/.vimrc ]; then
+   rm ~/.vimrc
+elif [ -e ~/.vimrc ]; then
+   echo ~/.vimrc already exist!
+   echo 'Rename it to ~/.vimrc.old and proceed? (Y/n)'
+   while [ true ] ; do
+       read RENAME
+       if [ "$RENAME" == 'Y' ] || [ "$RENAME" == 'y' ] || [ "$RENAME" == '' ] ; then
+           mv ~/.vimrc ~/.vimrc.old
+           break
+       elif [ "$RENAME" == 'N' ] || [ "$RENAME" == 'n' ] ; then
+           echo Aborting ...
+           exit 1
+       else echo 'Invalid input. Answer with (y)es or (n)o'
+       fi
+   done
 fi
 
 # If ~/.vim exists, remove it or fail
-if [ -f ~/.vim ] || [ -d ~/.vim ]; then
-    if [[ $(file --mime-type -b ~/.vim) == *"symlink"* ]]
-    then
-        echo REMOVING OLD SYMLINK ~/.vim
-        rm ~/.vim
-    else
-        echo ~/.vim EXISTS!
-        exit 1
-    fi
+if [ -L ~/.vim ]; then
+   rm ~/.vim
+elif [ -f ~/.vim ] || [ -d ~/.vim ]; then
+   echo ~/.vim already exist!
+   echo 'Rename it to ~/.vim.old and proceed? (Y/n)'
+   while [ true ] ; do
+       read RENAME
+       if [ "$RENAME" == 'Y' ] || [ "$RENAME" == 'y' ] || [ "$RENAME" == '' ] ; then
+           mv ~/.vim ~/.vim.old
+           break
+       elif [ "$RENAME" == 'N' ] || [ "$RENAME" == 'n' ] ; then
+           echo Aborting ...
+           exit 1
+       else echo 'Invalid input. Answer with (y)es or (n)o'
+       fi
+   done
 fi
 
 # if git doesn't exist, then fail
@@ -36,7 +51,7 @@ ln -s "$BASE/dot-vim" ~/.vim
 
 if [ ! -d "$BASE/dot-vim/bundle/Vundle.vim" ]
 then
-    echo Downloading Vundle! ...
+    echo Downloading Vundle ...
     git clone https://github.com/VundleVim/Vundle.vim.git "$BASE/dot-vim/bundle/Vundle.vim"
 fi
 
