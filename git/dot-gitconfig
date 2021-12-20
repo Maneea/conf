@@ -11,3 +11,4 @@
     p = push
     a = add .
     c = commit -m
+    ch = checkout
