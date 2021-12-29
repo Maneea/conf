@@ -10,7 +10,7 @@ set expandtab
 set hlsearch
 
 " Colorscheme (https://github.com/tomasr/molokai) in ~/.vim/colors
-colorscheme molokai
+" colorscheme molokai
 
 " Unicode (to show icons)
 set encoding=UTF-8

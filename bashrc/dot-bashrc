@@ -41,7 +41,7 @@ fi
 #                           ALIASES                         #
 #############################################################
 
-alias c='curl'
+alias c='clear'
 alias g='git'
 alias d='docker'
 alias e='echo'
