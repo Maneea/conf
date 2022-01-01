@@ -47,6 +47,7 @@ alias d='docker'
 alias e='echo'
 alias p='printf'
 alias v='vim'
+alias k='kubectl'
 
 alias open='xdg-open'
 alias ls='ls --color=auto'
