@@ -48,6 +48,9 @@ alias e='echo'
 alias p='printf'
 alias v='vim'
 alias k='kubectl'
+alias r='redis-cli'
+
+alias dc='docker compose'
 
 alias open='xdg-open'
 alias ls='ls --color=auto'
