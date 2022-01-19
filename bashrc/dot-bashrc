@@ -49,6 +49,7 @@ alias p='printf'
 alias v='vim'
 alias k='kubectl'
 alias r='redis-cli'
+alias docker-rm-all='docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -qf "dangling=true") && docker volume rm $(docker volume ls -q)'
 
 alias dc='docker compose'
 
