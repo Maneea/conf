@@ -41,13 +41,17 @@ fi
 #                           ALIASES                         #
 #############################################################
 
-alias c='curl'
+alias c='clear'
 alias g='git'
 alias d='docker'
 alias e='echo'
 alias p='printf'
 alias v='vim'
-alias s='sudo'
+alias k='kubectl'
+alias r='redis-cli'
+alias docker-rm-all='docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -qf "dangling=true") && docker volume rm $(docker volume ls -q)'
+
+alias dc='docker compose'
 
 alias open='xdg-open'
 alias ls='ls --color=auto'
