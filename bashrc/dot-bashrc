@@ -78,3 +78,6 @@ PS1="$PS1\[\033[0m\]"       # Restore normal colors
 # Opt out of sending stuff to the Microsoft .NET team
 export DOTNET_CLI_TELEMETRY_OPTOUT=0
 
+# golang binary (as per the docs)
+export PATH=$PATH:/usr/local/go/bin
+
