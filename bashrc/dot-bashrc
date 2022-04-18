@@ -36,6 +36,12 @@ if [ -x /usr/lib/command-not-found -o -x /usr/share/command-not-found/command-no
     }
 fi
 
+#############################################################
+#                       CUSTOM SETTINGS                     #
+#############################################################
+
+# 1Password-CLI (op) auto-completion
+source <(op completion bash)
 
 #############################################################
 #                           ALIASES                         #
@@ -49,7 +55,7 @@ alias p='printf'
 alias v='vim'
 alias k='kubectl'
 alias r='redis-cli'
-alias docker-rm-all='docker stop $(docker ps -aq) && docker rm $(docker ps -aq) && docker rmi $(docker images -qf "dangling=true") && docker volume rm $(docker volume ls -q)'
+alias docker-rm-all='docker stop $(docker ps -aq) 2>/dev/null; docker rm $(docker ps -aq) 2>/dev/null; docker rmi $(docker images -qf "dangling=true") 2>/dev/null; docker volume rm $(docker volume ls -q) 2>/dev/null;'
 
 alias dc='docker compose'
 
@@ -82,3 +88,6 @@ PS1="$PS1\[\033[0m\]"       # Restore normal colors
 # Opt out of sending stuff to the Microsoft .NET team
 export DOTNET_CLI_TELEMETRY_OPTOUT=0
 
+# golang
+export GOPATH=/home/maneea/go
+export PATH=$PATH:/usr/local/bin/go
