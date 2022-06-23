@@ -41,7 +41,7 @@ fi
 #############################################################
 
 # 1Password-CLI (op) auto-completion
-source <(op completion bash)
+source <(op completion bash 2>/dev/null)
 
 #############################################################
 #                           ALIASES                         #
