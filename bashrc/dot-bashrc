@@ -55,6 +55,7 @@ alias p='printf'
 alias v='vim'
 alias k='kubectl'
 alias r='redis-cli'
+alias code='GTK_IM_MODULE="xim" code'
 alias docker-rm-all='docker stop $(docker ps -aq) 2>/dev/null; docker rm $(docker ps -aq) 2>/dev/null; docker rmi $(docker images -qf "dangling=true") 2>/dev/null; docker volume rm $(docker volume ls -q) 2>/dev/null;'
 
 alias dc='docker compose'
