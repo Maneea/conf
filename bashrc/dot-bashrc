@@ -70,8 +70,8 @@ alias grep='grep --color=auto'
 
 # JWT Decoder
 jwtd(){
-> echo "$1" | cut -d. -f1,2 | tr . '\n' | base64 -d - | jq
-> }
+    echo "$1" | cut -d. -f1,2 | tr . '\n' | base64 -d - | jq
+}
 
 #############################################################
 #                           ENV VARS                        #
