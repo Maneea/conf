@@ -103,3 +103,11 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=0
 # golang
 export GOPATH=/home/maneea/go
 export PATH=$PATH:/usr/local/bin/go
+
+#########################################################
+# Host Specific Configurations
+
+if test -f ~/.bashrc_host; then
+    source ~/.bashrc_host
+fi
+
