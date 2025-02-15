@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# If ~/.vimrc exists, remove it or fail
-if [ -L ~/.vimrc ]; then
+# If ~/.vimrc exists, remove it, rename it, or fail.
+if [ -L ~/.vimrc ]; then # If it's a symlink, remove it.
    rm ~/.vimrc
 elif [ -e ~/.vimrc ]; then
    echo ~/.vimrc already exist!
@@ -19,8 +19,8 @@ elif [ -e ~/.vimrc ]; then
    done
 fi
 
-# If ~/.vim exists, remove it or fail
-if [ -L ~/.vim ]; then
+# If ~/.vim exists, remove it, rename it, or fail
+if [ -L ~/.vim ]; then # If it's a symlink
    rm ~/.vim
 elif [ -f ~/.vim ] || [ -d ~/.vim ]; then
    echo ~/.vim already exist!
@@ -44,6 +44,7 @@ if ! type git>/dev/null 2>&1 ; then
     exit 1
 fi
 
+# Now the installation starts.
 BASE=$(printf "$(pwd)/$0"|sed -e's/\/.\//\//g'|grep -Eo '^/.+/'|grep -Eo '^.+[^/]')
 echo Creating symbolic links to ~/.vim and ~/.vimrc
 ln -s "$BASE/dot-vimrc" ~/.vimrc 

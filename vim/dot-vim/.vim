@@ -1,1 +1,0 @@
-/home/maneea/projects/conf/vim/dot-vim

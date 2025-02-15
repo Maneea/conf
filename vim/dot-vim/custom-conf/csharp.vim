@@ -57,7 +57,7 @@ if has('termguicolors')
 endif
 
 set background=dark
-colorscheme gruvbox
+" colorscheme gruvbox
 " }}}
 
 " ALE: {{{
@@ -91,7 +91,6 @@ augroup END
 
 " Lightline: {{{
 let g:lightline = {
-\ 'colorscheme': 'gruvbox',
 \ 'active': {
 \   'right': [
 \     ['linter_checking', 'linter_errors', 'linter_warnings', 'linter_infos', 'linter_ok'],
@@ -101,9 +100,6 @@ let g:lightline = {
 \ },
 \ 'inactive': {
 \   'right': [['lineinfo'], ['percent'], ['sharpenup']]
-\ },
-\ 'component': {
-\   'sharpenup': sharpenup#statusline#Build()
 \ },
 \ 'component_expand': {
 \   'linter_checking': 'lightline#ale#checking',

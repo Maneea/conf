@@ -2,7 +2,7 @@
 	name = Abdulrahman Bin Maneea
 	email = a@maneea.net
 [core]
-	sshCommand = ssh -i ~/.ssh/id_rsa
+	sshCommand = ssh -i ~/.ssh/git_id_rsa
 [alias]
     d = diff
     s = status
@@ -12,3 +12,4 @@
     a = add .
     c = commit -m
     ch = checkout
+    sync = !git add . && git commit -m 'quick-sync :)' && git push

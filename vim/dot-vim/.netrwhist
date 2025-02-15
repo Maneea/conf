@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/maneea/projects/conf/vim/dot-vim/filetypes'
+let g:netrw_dirhist_2='/home/maneea/projects/conf/vim/dot-vim'
+let g:netrw_dirhist_1='/mnt/d/dotnet/RirsFtpServersDbsAnalysis'

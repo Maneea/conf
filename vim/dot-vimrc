@@ -1,24 +1,8 @@
-syntax on
-set number
+" Setup Vundle (Vim Bundle, the package manager) and activate plugins:
+source ~/.vim/vundle/init.vim
 
-" Tabs
-set tabstop=4
-set shiftwidth=4
-set expandtab
+" General (global) configurations and key-bindings:
+source ~/.vim/general/init.vim
 
-" Highlight search
-set hlsearch
-
-" Colorscheme (https://github.com/tomasr/molokai) in ~/.vim/colors
-colorscheme molokai
-
-" OR ----------------
-" Download and install plugins
-"source ~/.vim/vundle/init.vim
-
-" Languages and formats-specific configuration
-"source ~/.vim/custom-conf/go.vim
-"source ~/.vim/custom-conf/csharp.vim
-
-" Apply general settings (line numbers, syntax, tabs, etc.)
-"source ~/.vim/custom-conf/general.vim
+" Filetype-specific configurations and key-bindings:
+source ~/.vim/filetype/init.vim
