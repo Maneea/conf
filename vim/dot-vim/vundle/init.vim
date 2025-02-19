@@ -7,9 +7,10 @@
 "
 "filetype plugin indent on    " required
 
-set nocompatible    " be iMproved, required by Vundle (Vim Bundle)
-filetype off        " required by Vundle (Vim Bundle)
-set rtp+=~/.vim/bundle/Vundle.vim
+set nocompatible                    " be iMproved, required by Vundle (Vim Bundle)
+filetype off                        " required by Vundle (Vim Bundle)
+set rtp+=~/.vim/bundle/Vundle.vim   " Vundle (Vim Bundle)
+set rtp+=~/.fzf/bin                 " FZF
 call vundle#begin()         " required by Vundle
     " Let Vundle manage Vundle
     Plugin 'VundleVim/Vundle.vim'
@@ -22,8 +23,10 @@ call vundle#begin()         " required by Vundle
 
     " Symbols search and refactoring
     Plugin 'junegunn/fzf'
+    Plugin 'junegunn/fzf.vim'
 
     " Code errors and warnings (Used by .NET Langauge Server)
+    " WARNING: Huge performance degradation!
     Plugin 'dense-analysis/ale'
 
     " .NET Language Server (OmniSharp-Roslyn)
@@ -31,6 +34,8 @@ call vundle#begin()         " required by Vundle
     Plugin 'OmniSharp/omnisharp-vim'
 
     " Nice Statusbar
+    let g:airline#extensions#tabline#enabled = 1 " Show file name at the top
+    let g:airline_powerline_fonts = 1            " Show icons
     Plugin 'vim-airline/vim-airline'
 
     " Copilot
@@ -38,6 +43,8 @@ call vundle#begin()         " required by Vundle
 
     " NERDTree
     Plugin 'scrooloose/NerdTree'
+    Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'    " Add file-type-based highlighting
+    Plugin 'ryanoasis/vim-devicons'                     " Add icons to file types
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle

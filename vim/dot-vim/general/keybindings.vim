@@ -1,7 +1,7 @@
 " Moving between buffers
-noremap <C-PageDown> <Esc>:bn<CR>
-noremap <C-PageUp> <Esc>:bp<CR>
-noremap <C-w> <Esc>:bd<CR>
+nnoremap <Leader><lt> <Esc>:bn<CR>
+nnoremap <Leader><gt> <Esc>:bp<CR>
+nnoremap <Leader>c <Esc>:bd<CR>
 
 " NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>

@@ -1,1 +1,0 @@
-Plugin 'elzr/vim-json'

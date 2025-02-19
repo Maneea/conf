@@ -21,10 +21,11 @@ autocmd VimEnter * redraw!
 " Tabs
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
+set autoindent
 
 " Highlight search
-set hlsearch
+set nohlsearch
 
 " Colorscheme (https://github.com/tomasr/molokai) in ~/.vim/colors
 colorscheme molokai
