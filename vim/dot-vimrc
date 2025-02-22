@@ -1,9 +1,29 @@
-" Setup Vundle (Vim Bundle, the package manager) and activate plugins:
-source ~/.vim/vundle/init.vim
-
-" General (global) configurations and key-bindings:
+" General gconfigurations & key-bindings no related to any particular plugin
 source ~/.vim/general/init.vim
 
-" Filetype-specific configurations and key-bindings:
+" Setup Vundle (Vim Bundle, the package manager) and activate plugins
+source ~/.vim/vundle/init.vim
+
+" Filetype-specific configurations and key-bindings, after all plugins are loaded
 source ~/.vim/filetype/init.vim
 
+" ========================================= "
+" ========== Keybindings Summary ========== "
+" ========================================= "
+"
+" Code formatting (All languahes)			<C-S-f>		(Normal mode)
+" Next buffer								<Leader>]	(All modes)
+" Previous buffer							<Leader>[	(All modes)
+" Close buffer								<Leader>q	(All modes)
+" Toggle NERDTree							<C-n>		(Normal mode)
+" Show autocomplete menu					<C-Space>	(Insert mode)
+" Complete from autocomplete menu			<C-n>		(Insert mode)
+" Open files dialog (Fuzzy Finder)			<C-S-p)		(Normal mode)
+"
+" ========== Copilot - AI-Assisted Coding ========== "
+" Copilot - Open suggestions panel			<Leader>ai	(Insert mode)
+" Copilot - Dismiss suggestions panel		<Leader>d	(Insert mode)
+" Copilot - Accept suggestion				<Tab>		(Insert mode)
+" Copilot - Accept next word of suggestion	<M-Right>	(Insert mode)
+" Copilot - Show next suggestion			<Leader>n	(Insert mode)
+" Copilot - Show previous suggestion		<Leader>p	(Insert mode)

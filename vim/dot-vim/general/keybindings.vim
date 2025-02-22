@@ -1,7 +1,4 @@
 " Moving between buffers
-nnoremap <Leader><lt> <Esc>:bn<CR>
-nnoremap <Leader><gt> <Esc>:bp<CR>
-nnoremap <Leader>c <Esc>:bd<CR>
-
-" NERDTree
-nnoremap <C-n> :NERDTreeToggle<CR>
+noremap <Leader>[ <Esc>:bp<CR>
+noremap <Leader>] <Esc>:bn<CR>
+noremap <Leader>q <Esc>:bd<CR>

@@ -2,7 +2,7 @@ autocmd FileType cs nnoremap <C-d> :OmniSharpDocumentation<CR>
 autocmd FileType cs nnoremap <C-x><C-o> :OmniSharpSignatureHelp<CR>
 autocmd FileType cs nnoremap <Leader>u :OmniSharpFixUsings<CR>
 autocmd FileType cs nnoremap <Leader>a :OmniSharpGetCodeActions<CR>
-autocmd FileType cs nnoremap <Leader>f :OmniSharpCodeFormat<CR>
+
 " For comments:
 autocmd FileType cs inoremap <C-/> <Esc>i<Home>//
 
