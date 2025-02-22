@@ -9,10 +9,10 @@ set encoding=UTF-8 " Unicode (to show icons)
 set nohlsearch " Disable search highlighting
 
 " Change popup colors
-autocmd VimEnter * highlight Pmenu ctermbg=245 ctermfg=232
-autocmd VimEnter * highlight PmenuSel ctermbg=22 ctermfg=255
-autocmd VimEnter * highlight PmenuSbar ctermbg=240 ctermfg=232
-autocmd VimEnter * highlight PmenuThumb ctermbg=240 ctermfg=232
+autocmd VimEnter * highlight Pmenu ctermbg=234 ctermfg=250
+autocmd VimEnter * highlight PmenuSel ctermbg=236 ctermfg=250
+autocmd VimEnter * highlight PmenuSbar ctermbg=22 ctermfg=250
+autocmd VimEnter * highlight PmenuThumb ctermbg=46 ctermfg=250
 autocmd VimEnter * redraw!
 
 " Tabs (Shouldn't be useful, as tmux is used instead)
