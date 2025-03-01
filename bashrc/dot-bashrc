@@ -64,6 +64,8 @@ alias open='xdg-open'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias wincd='cd /mnt/c/Users/maneea/'
+command -v batcat &> /dev/null && alias cat='batcat' && alias cat_orig='/usr/bin/cat'
+command -v bat &> /dev/null && alias cat='bat' && alias cat_orig='/usr/bin/cat'
 
 #############################################################
 #                          FUNCTIONS                        #

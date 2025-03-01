@@ -10,6 +10,7 @@ call vundle#begin()         " required by Vundle
 	source ~/.vim/vundle/statusline.vim " & Tabline
 	source ~/.vim/vundle/ai.vim
 	source ~/.vim/vundle/filesystem.vim
+	Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle

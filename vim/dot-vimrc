@@ -26,6 +26,21 @@ source ~/.vim/vundle/init.vim
 " Code actions (Refactorings)				<C-a>		(Normal mode)
 " Rename symbol								<Leader>rr	(Normal mode)
 " Global codebase check						<Leader>cc	(Normal mode)
+" Fold all level 1							<Esc>1		(Normal mode)
+" Fold all level 2							<Esc>2		(Normal mode)
+" Fold all level 3							<Esc>3		(Normal mode)
+" Fold all level 4							<Esc>4		(Normal mode)
+" Fold all level 5							<Esc>5		(Normal mode)
+" Fold all level 6							<Esc>6		(Normal mode)
+" Fold all level 7							<Esc>7		(Normal mode)
+" Fold all level 8							<Esc>8		(Normal mode)
+" Fold all level 9							<Esc>9		(Normal mode)
+" Unfold all								<Esc>0		(Normal mode)
+" Open fold									zo			(Normal mode)
+" Open all folds							zR			(Normal mode)
+" Close fold								zc			(Normal mode)
+" Close all folds							zM			(Normal mode)
+" Toggle fold								za			(Normal mode)
 " ========== Coding (Symbol Navigation) ============================ "
 " Go to definition							<Leader>def	(Normal mode)
 " Find implementations						<Leader>fi	(Normal mode)
@@ -47,5 +62,3 @@ source ~/.vim/vundle/init.vim
 " Copilot - Show next suggestion			<Leader>n	(Insert mode)
 " Copilot - Show previous suggestion		<Leader>p	(Insert mode)
 " ================================================================== "
-"
-
