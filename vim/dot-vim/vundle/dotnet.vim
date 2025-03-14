@@ -19,7 +19,10 @@ let g:OmniSharp_formatter_options = { 'indentSize': 4, 'useTabs': v:true }
 autocmd FileType cs setlocal omnifunc=OmniSharp#Complete
 autocmd FileType cs nnoremap <silent> <buffer> <C-S-F> <Plug>(omnisharp_code_format)
 autocmd FileType cs nnoremap <silent> <buffer> <C-d> <Plug>(omnisharp_documentation)
-autocmd FileType cs nnoremap <silent> <buffer> <C-s> <Plug>(omnisharp_signature_help)
+autocmd FileType cs nnoremap <silent> <C-s> <Plug>(omnisharp_signature_help)
+" And to cycle through them (i.e., show next overload):
+" (this is a weird bug and a hacky way to fix it)
+autocmd FileType cs nnoremap <silent> <C-k> <Plug>(omnisharp_signature_help)
 autocmd FileType cs nnoremap <silent> <buffer> <C-u> <Plug>(omnisharp_fix_usings)
 autocmd FileType cs nnoremap <silent> <buffer> <C-a> <Plug>(omnisharp_code_actions)
 

@@ -50,6 +50,7 @@ source <(op completion bash 2>/dev/null)
 alias c='clear'
 alias g='git'
 alias d='docker'
+alias dclean='docker-clean'
 alias e='echo'
 alias p='printf'
 alias v='vim'
@@ -64,8 +65,7 @@ alias open='xdg-open'
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias wincd='cd /mnt/c/Users/maneea/'
-command -v batcat &> /dev/null && alias cat='batcat' && alias cat_orig='/usr/bin/cat'
-command -v bat &> /dev/null && alias cat='bat' && alias cat_orig='/usr/bin/cat'
+command -v batcat &> /dev/null && alias bat='batcat'
 
 #############################################################
 #                          FUNCTIONS                        #
@@ -106,6 +106,7 @@ export DOTNET_CLI_TELEMETRY_OPTOUT=0
 # golang
 export GOPATH=/home/maneea/go
 export PATH=$PATH:/usr/local/bin/go
+export PATH=$PATH:~/bin
 
 #########################################################
 # Host Specific Configurations

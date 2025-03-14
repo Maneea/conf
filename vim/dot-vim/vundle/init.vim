@@ -11,6 +11,7 @@ call vundle#begin()         " required by Vundle
 	source ~/.vim/vundle/ai.vim
 	source ~/.vim/vundle/filesystem.vim
 	Plugin 'editorconfig/editorconfig-vim'
+	Plugin 'gabrielelana/vim-markdown'
 
 call vundle#end()           " required by Vundle
 filetype plugin indent on   " required by Vundle
