@@ -127,3 +127,5 @@ export NVM_DIR="$HOME/.nvm"
 export FZF_DEFAULT_OPTS='--tmux right,75% --reverse --border rounded --style full --preview "fzf-preview.sh {}" --bind "focus:transform-header:file --brief {}" --walker-skip obj,bin,.nuget,.git,.vscode,.idea,node_modules,.fzf,.vim/bundle,.nvm,.local,.cache,.config,.dotnet,dot-vim'
 # The 3 FZF key bindings are Ctrl-T, Ctrl-R, and Alt-C
 export FZF_ALT_C_OPTS="--preview 'tree -C {}'"
+
+tmux -As main
